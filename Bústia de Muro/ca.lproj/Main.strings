@@ -1,0 +1,228 @@
+
+/* Class = "UILabel"; text = "Login with your account"; ObjectID = "1DV-Xl-sqs"; */
+"1DV-Xl-sqs.text" = "Inicia sessió amb el teu conter";
+
+/* Class = "UIButton"; normalTitle = "Understood"; ObjectID = "2If-S1-vEp"; */
+"2If-S1-vEp.normalTitle" = "Entés";
+
+/* Class = "UILabel"; text = "Welcome!"; ObjectID = "2NM-OR-SyR"; */
+"2NM-OR-SyR.text" = "Benvingut!";
+
+/* Class = "UILabel"; text = "#2"; ObjectID = "3Ii-TW-KCi"; */
+"3Ii-TW-KCi.text" = "#2";
+
+/* Class = "UILabel"; text = "Muro's Council"; ObjectID = "5g8-Ni-0jR"; */
+"5g8-Ni-0jR.text" = "Ajuntament de Muro";
+
+/* Class = "UILabel"; text = "Message:"; ObjectID = "6QB-MK-i60"; */
+"6QB-MK-i60.text" = "Missatge:";
+
+/* Class = "UILabel"; text = "Wellcome to the Muro Citizens Box!"; ObjectID = "71R-ko-63L"; */
+"71R-ko-63L.text" = "Benvinguts a la Bústia de Muro!";
+
+/* Class = "UILabel"; text = "The Citizen's Box"; ObjectID = "7bR-oc-XSd"; */
+"7bR-oc-XSd.text" = "La Bústia del Ciutadà";
+
+/* Class = "UITextField"; placeholder = "Write here the title of your issue."; ObjectID = "7sT-RA-Br0"; */
+"7sT-RA-Br0.placeholder" = "Escriu ací el titol del assunt.";
+
+/* Class = "UILabel"; text = "Muro's Council"; ObjectID = "8tz-iC-bUi"; */
+"8tz-iC-bUi.text" = "Ajuntament de Muro";
+
+/* Class = "UILabel"; text = "The Citizen's Box"; ObjectID = "BB1-yS-yMn"; */
+"BB1-yS-yMn.text" = "La Bústia del Ciutadà";
+
+/* Class = "UILabel"; text = "Atach a photo from your Image Gallery or get one with your Camera."; ObjectID = "Bm7-8a-MDa"; */
+"Bm7-8a-MDa.text" = "Adjunta una foto des de la Galería d'Imatges o des de la Càmera.";
+
+/* Class = "UILabel"; text = "Muro's Council"; ObjectID = "CWQ-Le-pUD"; */
+"CWQ-Le-pUD.text" = "Ajuntament de Muro";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "Cov-UY-1UI"; */
+"Cov-UY-1UI.normalTitle" = "<";
+
+/* Class = "UILabel"; text = "Orange light for status \"in review\" & Green light when the incidence will be solved."; ObjectID = "Cpv-ww-nba"; */
+"Cpv-ww-nba.text" = "La llum taronja es per al status \"en revisió\" i la llum verda per a quan l'incidencia s'ha solventat.";
+
+/* Class = "UILabel"; text = "You can also sign in with your own account or with your Facebook account."; ObjectID = "DxT-jP-sQj"; */
+"DxT-jP-sQj.text" = "També pots iniciar sessió amb el teu conter de Facebook.";
+
+/* Class = "UITextField"; placeholder = "What happens? Explain it to us."; ObjectID = "ENW-f8-pF6"; */
+"ENW-f8-pF6.placeholder" = "Que està passant? Conta'ns-ho.";
+
+/* Class = "UILabel"; text = "Muro's Council"; ObjectID = "EPi-Ao-wyF"; */
+"EPi-Ao-wyF.text" = "Ajuntament de Muro";
+
+/* Class = "UILabel"; text = "Muro's Council"; ObjectID = "Eye-Rc-z6y"; */
+"Eye-Rc-z6y.text" = "Ajuntament de Muro";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "FQv-M1-nh7"; */
+"FQv-M1-nh7.text" = "Label";
+
+/* Class = "UILabel"; text = "The Citizen's Box"; ObjectID = "Hu3-lt-GTC"; */
+"Hu3-lt-GTC.text" = "La Bústia del Ciutadà";
+
+/* Class = "UILabel"; text = "Muro's Council"; ObjectID = "J72-qk-uMb"; */
+"J72-qk-uMb.text" = "Ajuntament de Muro";
+
+/* Class = "UILabel"; text = "Answer:"; ObjectID = "JDK-Ya-fJv"; */
+"JDK-Ya-fJv.text" = "Resposta:";
+
+/* Class = "UILabel"; text = "Instructions"; ObjectID = "Jid-9H-6BI"; */
+"Jid-9H-6BI.text" = "Instruccións";
+
+/* Class = "UITextField"; placeholder = "Repeat Password"; ObjectID = "Jqb-Pu-Yct"; */
+"Jqb-Pu-Yct.placeholder" = "Repeteix Contrasenya";
+
+/* Class = "UILabel"; text = "The Citizen's Box"; ObjectID = "KO6-PS-bEj"; */
+"KO6-PS-bEj.text" = "La Bústia del Ciutadà";
+
+/* Class = "UILabel"; text = "Muro's Council"; ObjectID = "Kx9-uY-d5j"; */
+"Kx9-uY-d5j.text" = "Ajuntament de Muro";
+
+/* Class = "UITextField"; placeholder = "DNI with the Capital letter"; ObjectID = "LRb-Bj-Th3"; */
+"LRb-Bj-Th3.placeholder" = "DNI amb Lletra";
+
+/* Class = "UIButton"; normalTitle = "Create"; ObjectID = "MPY-Gu-HOt"; */
+"MPY-Gu-HOt.normalTitle" = "Crear";
+
+/* Class = "UIButton"; normalTitle = "+"; ObjectID = "MjS-Mv-Pah"; */
+"MjS-Mv-Pah.normalTitle" = "+";
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "NSD-cJ-zLW"; */
+"NSD-cJ-zLW.normalTitle" = "Tancar sessió";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "PTY-rB-Hfh"; */
+"PTY-rB-Hfh.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Pun-CI-BOl"; */
+"Pun-CI-BOl.text" = "Label";
+
+/* Class = "UILabel"; text = "G.P.S:"; ObjectID = "QXp-e8-Bgq"; */
+"QXp-e8-Bgq.text" = "G.P.S:";
+
+/* Class = "UILabel"; text = "The Citizen's Box"; ObjectID = "QrE-d4-1Zb"; */
+"QrE-d4-1Zb.text" = "La Bústia del Ciutadà";
+
+/* Class = "UIButton"; normalTitle = "Login with my account"; ObjectID = "RRf-Hc-P1R"; */
+"RRf-Hc-P1R.normalTitle" = "Iniciar sessió amb el meu conter";
+
+/* Class = "UILabel"; text = "We will start to work on it!"; ObjectID = "UBS-y8-1Ln"; */
+"UBS-y8-1Ln.text" = "Comensarem a treballar per resoldre la incidéncia quan abans millor!";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "VNG-O7-l16"; */
+"VNG-O7-l16.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Wm8-dA-t47"; */
+"Wm8-dA-t47.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "X0Q-ar-hLA"; */
+"X0Q-ar-hLA.normalTitle" = "<";
+
+/* Class = "UILabel"; text = "Issue:"; ObjectID = "ZgG-1u-REf"; */
+"ZgG-1u-REf.text" = "Assunt:";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "bEj-U6-9R3"; */
+"bEj-U6-9R3.placeholder" = "Contrasenya";
+
+/* Class = "UILabel"; text = "Muro's Council"; ObjectID = "bO2-d0-tZ0"; */
+"bO2-d0-tZ0.text" = "Ajuntament de Muro";
+
+/* Class = "UILabel"; text = "Get registered in the Citizen's Box."; ObjectID = "cbS-7D-L7u"; */
+"cbS-7D-L7u.text" = "Registra't en la Bústia de Muro.";
+
+/* Class = "UILabel"; text = "The Citizen's Box"; ObjectID = "cwv-t9-BHY"; */
+"cwv-t9-BHY.text" = "La Bústia del Ciutadà";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "dVp-TN-j5U"; */
+"dVp-TN-j5U.text" = "Label";
+
+/* Class = "UILabel"; text = "Sign in"; ObjectID = "dY3-Wq-zIc"; */
+"dY3-Wq-zIc.text" = "Inicia sessió";
+
+/* Class = "UILabel"; text = "Muro's Council"; ObjectID = "dcs-d8-4He"; */
+"dcs-d8-4He.text" = "Ajuntament de Muro";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "eCg-D7-FG4"; */
+"eCg-D7-FG4.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "Date:"; ObjectID = "esa-ZS-XZZ"; */
+"esa-ZS-XZZ.text" = "Data:";
+
+/* Class = "UILabel"; text = "Message:"; ObjectID = "fUN-Pp-nw1"; */
+"fUN-Pp-nw1.text" = "Missatge:";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "h7A-sW-FXd"; */
+"h7A-sW-FXd.normalTitle" = "<";
+
+/* Class = "UILabel"; text = "Write us the issue, attach a photo and send it!"; ObjectID = "itZ-nX-nkS"; */
+"itZ-nX-nkS.text" = "Conta'ns el que està passant, adjunta una foto i envia'ns-la!";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "izY-kn-ObZ"; */
+"izY-kn-ObZ.placeholder" = "Contrasenya";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jL6-4N-bBd"; */
+"jL6-4N-bBd.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "jWs-ro-wid"; */
+"jWs-ro-wid.normalTitle" = "<";
+
+/* Class = "UILabel"; text = "#1"; ObjectID = "jfK-PI-Ray"; */
+"jfK-PI-Ray.text" = "#1";
+
+/* Class = "UIButton"; normalTitle = "Get one now!"; ObjectID = "lhI-Bu-ZvL"; */
+"lhI-Bu-ZvL.normalTitle" = "Crea't una ara!";
+
+/* Class = "UILabel"; text = "#4"; ObjectID = "mfI-1a-4VW"; */
+"mfI-1a-4VW.text" = "#4";
+
+/* Class = "UILabel"; text = "Issue:"; ObjectID = "nQZ-2g-Gcs"; */
+"nQZ-2g-Gcs.text" = "Assunt:";
+
+/* Class = "UITextField"; placeholder = "User name"; ObjectID = "o0A-0R-maa"; */
+"o0A-0R-maa.placeholder" = "Nom del usuari";
+
+/* Class = "UILabel"; text = "#3"; ObjectID = "oGX-pa-oII"; */
+"oGX-pa-oII.text" = "#3";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "ovQ-xc-tbd"; */
+"ovQ-xc-tbd.normalTitle" = "Següent";
+
+/* Class = "UILabel"; text = "Date:"; ObjectID = "ow6-Wp-ghq"; */
+"ow6-Wp-ghq.text" = "Data:";
+
+/* Class = "UILabel"; text = "Now you can send us what's happening."; ObjectID = "qqJ-mf-7Nb"; */
+"qqJ-mf-7Nb.text" = "Dis-nos, Que està passant?";
+
+/* Class = "UILabel"; text = "The Citizen's Box"; ObjectID = "qww-wz-ctO"; */
+"qww-wz-ctO.text" = "La Bústia del Ciutadà";
+
+/* Class = "UILabel"; text = "The Citizen's Box"; ObjectID = "sRY-kM-YNC"; */
+"sRY-kM-YNC.text" = "La Bústia del Ciutadà";
+
+/* Class = "UITextField"; placeholder = "DNI with the Capital letter"; ObjectID = "tac-q7-Teb"; */
+"tac-q7-Teb.placeholder" = "DNI amb Lletra";
+
+/* Class = "UILabel"; text = "Step by step"; ObjectID = "tng-ps-hAw"; */
+"tng-ps-hAw.text" = "Pas a pas";
+
+/* Class = "UILabel"; text = "Check the status of your message."; ObjectID = "twu-35-RHY"; */
+"twu-35-RHY.text" = "Comproba l'estat del teu missatge.";
+
+/* Class = "UILabel"; text = "Issue:"; ObjectID = "u6O-cW-tcn"; */
+"u6O-cW-tcn.text" = "Assunt:";
+
+/* Class = "UILabel"; text = "Create your account"; ObjectID = "wl1-FS-EMM"; */
+"wl1-FS-EMM.text" = "Crea't un conter";
+
+/* Class = "UILabel"; text = "The Citizen's Box"; ObjectID = "xfv-w1-5di"; */
+"xfv-w1-5di.text" = "La Bústia del Ciutadà";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "yT8-9t-DZD"; */
+"yT8-9t-DZD.normalTitle" = "<";
+
+/* Class = "UILabel"; text = "I don't have an account"; ObjectID = "yoX-pe-bcd"; */
+"yoX-pe-bcd.text" = "No tinc conter";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "yuc-Cc-tM4"; */
+"yuc-Cc-tM4.normalTitle" = "<";

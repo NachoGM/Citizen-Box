@@ -8,13 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		6E0EFA0C1F556AB1002EAF24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EFA0B1F556AB1002EAF24 /* AppDelegate.swift */; };
-		6E0EFA0E1F556AB1002EAF24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EFA0D1F556AB1002EAF24 /* ViewController.swift */; };
 		6E0EFA111F556AB1002EAF24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0EFA0F1F556AB1002EAF24 /* Main.storyboard */; };
 		6E0EFA141F556AB1002EAF24 /* Bu_stia_de_Muro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EFA121F556AB1002EAF24 /* Bu_stia_de_Muro.xcdatamodeld */; };
 		6E0EFA161F556AB1002EAF24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E0EFA151F556AB1002EAF24 /* Assets.xcassets */; };
 		6E0EFA191F556AB1002EAF24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0EFA171F556AB1002EAF24 /* LaunchScreen.storyboard */; };
 		6E0EFA241F556AB1002EAF24 /* Bu_stia_de_MuroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EFA231F556AB1002EAF24 /* Bu_stia_de_MuroTests.swift */; };
 		6E0EFA2F1F556AB1002EAF24 /* Bu_stia_de_MuroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EFA2E1F556AB1002EAF24 /* Bu_stia_de_MuroUITests.swift */; };
+		6E89C91D1F5722F400C8929B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E89C91C1F5722F400C8929B /* GoogleService-Info.plist */; };
+		6EBB770E1F55F02F009C31C1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBB770D1F55F02F009C31C1 /* MapKit.framework */; };
+		6EBB77101F55F059009C31C1 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBB770F1F55F059009C31C1 /* ExternalAccessory.framework */; };
+		6EBB77151F5601CC009C31C1 /* Instrucciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB77141F5601CC009C31C1 /* Instrucciones.swift */; };
+		6EBB77171F560260009C31C1 /* Inicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB77161F560260009C31C1 /* Inicio.swift */; };
+		6EBB77191F560361009C31C1 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB77181F560361009C31C1 /* Login.swift */; };
+		6EBB771B1F56036E009C31C1 /* Registro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB771A1F56036E009C31C1 /* Registro.swift */; };
+		6EBB771D1F56038F009C31C1 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB771C1F56038F009C31C1 /* Protected.swift */; };
+		6EBB77201F56058C009C31C1 /* ListadoMensajes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB771F1F56058C009C31C1 /* ListadoMensajes.swift */; };
+		6EBB77241F5609D1009C31C1 /* VistaDetallada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB77231F5609D1009C31C1 /* VistaDetallada.swift */; };
+		6EBB77271F560C77009C31C1 /* EnviarMensaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB77261F560C77009C31C1 /* EnviarMensaje.swift */; };
+		6EBB77291F560CA6009C31C1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB77281F560CA6009C31C1 /* TableViewCell.swift */; };
+		6EBB772B1F560E22009C31C1 /* Localizacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB772A1F560E22009C31C1 /* Localizacion.swift */; };
+		6FE705374B88709A56CA7557 /* Pods_Bu_stia_de_MuroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E04C0EE9AB6C37109C3E12 /* Pods_Bu_stia_de_MuroTests.framework */; };
+		B64148FBB7B0C1D5E496AF13 /* Pods_Bu_stia_de_Muro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338C9190A8E666063F374F54 /* Pods_Bu_stia_de_Muro.framework */; };
+		C6D18E3F1B4982E0D3074C38 /* Pods_Bu_stia_de_MuroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1B24226B87E3C67231BB36 /* Pods_Bu_stia_de_MuroUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +50,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		005E2D69394AAA4CED6B557B /* Pods-Bústia de Muro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bústia de Muro.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bústia de Muro/Pods-Bústia de Muro.release.xcconfig"; sourceTree = "<group>"; };
+		25437329AA65D009ABFFB30E /* Pods-Bústia de MuroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bústia de MuroUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bústia de MuroUITests/Pods-Bústia de MuroUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		338C9190A8E666063F374F54 /* Pods_Bu_stia_de_Muro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bu_stia_de_Muro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E5E6E59B45C6FC3AB7A5089 /* Pods-Bústia de MuroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bústia de MuroTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bústia de MuroTests/Pods-Bústia de MuroTests.release.xcconfig"; sourceTree = "<group>"; };
+		5DBB7CEFF70976D110749056 /* Pods-Bústia de MuroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bústia de MuroUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bústia de MuroUITests/Pods-Bústia de MuroUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6E0EFA081F556AB1002EAF24 /* Bústia de Muro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bústia de Muro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E0EFA0B1F556AB1002EAF24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6E0EFA0D1F556AB1002EAF24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6E0EFA101F556AB1002EAF24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E0EFA131F556AB1002EAF24 /* Bu_stia_de_Muro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bu_stia_de_Muro.xcdatamodel; sourceTree = "<group>"; };
 		6E0EFA151F556AB1002EAF24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +68,28 @@
 		6E0EFA2A1F556AB1002EAF24 /* Bústia de MuroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bústia de MuroUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E0EFA2E1F556AB1002EAF24 /* Bu_stia_de_MuroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bu_stia_de_MuroUITests.swift; sourceTree = "<group>"; };
 		6E0EFA301F556AB1002EAF24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E5BBDC41F63148A003517E9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		6E5BBDC51F63148A003517E9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		6E5BBDC61F631495003517E9 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Main.strings; sourceTree = "<group>"; };
+		6E5BBDC71F631495003517E9 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		6E89C91C1F5722F400C8929B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6EBB770B1F55F021009C31C1 /* Bústia de Muro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bústia de Muro.entitlements"; sourceTree = "<group>"; };
+		6EBB770D1F55F02F009C31C1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6EBB770F1F55F059009C31C1 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		6EBB77141F5601CC009C31C1 /* Instrucciones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instrucciones.swift; sourceTree = "<group>"; };
+		6EBB77161F560260009C31C1 /* Inicio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inicio.swift; sourceTree = "<group>"; };
+		6EBB77181F560361009C31C1 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		6EBB771A1F56036E009C31C1 /* Registro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registro.swift; sourceTree = "<group>"; };
+		6EBB771C1F56038F009C31C1 /* Protected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protected.swift; sourceTree = "<group>"; };
+		6EBB771F1F56058C009C31C1 /* ListadoMensajes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListadoMensajes.swift; sourceTree = "<group>"; };
+		6EBB77231F5609D1009C31C1 /* VistaDetallada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaDetallada.swift; sourceTree = "<group>"; };
+		6EBB77261F560C77009C31C1 /* EnviarMensaje.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnviarMensaje.swift; sourceTree = "<group>"; };
+		6EBB77281F560CA6009C31C1 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		6EBB772A1F560E22009C31C1 /* Localizacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizacion.swift; sourceTree = "<group>"; };
+		8A1B24226B87E3C67231BB36 /* Pods_Bu_stia_de_MuroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bu_stia_de_MuroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92120DD65F1134C94E216771 /* Pods-Bústia de Muro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bústia de Muro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bústia de Muro/Pods-Bústia de Muro.debug.xcconfig"; sourceTree = "<group>"; };
+		D524FF6BC9D3A79EE8399A24 /* Pods-Bústia de MuroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bústia de MuroTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bústia de MuroTests/Pods-Bústia de MuroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D9E04C0EE9AB6C37109C3E12 /* Pods_Bu_stia_de_MuroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bu_stia_de_MuroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +97,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EBB77101F55F059009C31C1 /* ExternalAccessory.framework in Frameworks */,
+				6EBB770E1F55F02F009C31C1 /* MapKit.framework in Frameworks */,
+				B64148FBB7B0C1D5E496AF13 /* Pods_Bu_stia_de_Muro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FE705374B88709A56CA7557 /* Pods_Bu_stia_de_MuroTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +115,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6D18E3F1B4982E0D3074C38 /* Pods_Bu_stia_de_MuroUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61577DE6B0875FD78814B68D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92120DD65F1134C94E216771 /* Pods-Bústia de Muro.debug.xcconfig */,
+				005E2D69394AAA4CED6B557B /* Pods-Bústia de Muro.release.xcconfig */,
+				D524FF6BC9D3A79EE8399A24 /* Pods-Bústia de MuroTests.debug.xcconfig */,
+				4E5E6E59B45C6FC3AB7A5089 /* Pods-Bústia de MuroTests.release.xcconfig */,
+				25437329AA65D009ABFFB30E /* Pods-Bústia de MuroUITests.debug.xcconfig */,
+				5DBB7CEFF70976D110749056 /* Pods-Bústia de MuroUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6E0EF9FF1F556AB1002EAF24 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +142,8 @@
 				6E0EFA221F556AB1002EAF24 /* Bústia de MuroTests */,
 				6E0EFA2D1F556AB1002EAF24 /* Bústia de MuroUITests */,
 				6E0EFA091F556AB1002EAF24 /* Products */,
+				6EBB770C1F55F02F009C31C1 /* Frameworks */,
+				61577DE6B0875FD78814B68D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +160,9 @@
 		6E0EFA0A1F556AB1002EAF24 /* Bústia de Muro */ = {
 			isa = PBXGroup;
 			children = (
-				6E0EFA0B1F556AB1002EAF24 /* AppDelegate.swift */,
-				6E0EFA0D1F556AB1002EAF24 /* ViewController.swift */,
-				6E0EFA0F1F556AB1002EAF24 /* Main.storyboard */,
-				6E0EFA151F556AB1002EAF24 /* Assets.xcassets */,
-				6E0EFA171F556AB1002EAF24 /* LaunchScreen.storyboard */,
-				6E0EFA1A1F556AB1002EAF24 /* Info.plist */,
-				6E0EFA121F556AB1002EAF24 /* Bu_stia_de_Muro.xcdatamodeld */,
+				6EBB77131F560180009C31C1 /* Views */,
+				6EBB77121F560176009C31C1 /* Controllers */,
+				6EBB77111F55F242009C31C1 /* Supporting Files */,
 			);
 			path = "Bústia de Muro";
 			sourceTree = "<group>";
@@ -128,6 +185,81 @@
 			path = "Bústia de MuroUITests";
 			sourceTree = "<group>";
 		};
+		6EBB770C1F55F02F009C31C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EBB770F1F55F059009C31C1 /* ExternalAccessory.framework */,
+				6EBB770D1F55F02F009C31C1 /* MapKit.framework */,
+				338C9190A8E666063F374F54 /* Pods_Bu_stia_de_Muro.framework */,
+				D9E04C0EE9AB6C37109C3E12 /* Pods_Bu_stia_de_MuroTests.framework */,
+				8A1B24226B87E3C67231BB36 /* Pods_Bu_stia_de_MuroUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EBB77111F55F242009C31C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EBB770B1F55F021009C31C1 /* Bústia de Muro.entitlements */,
+				6E0EFA0B1F556AB1002EAF24 /* AppDelegate.swift */,
+				6E0EFA0F1F556AB1002EAF24 /* Main.storyboard */,
+				6E0EFA151F556AB1002EAF24 /* Assets.xcassets */,
+				6E0EFA171F556AB1002EAF24 /* LaunchScreen.storyboard */,
+				6E89C91C1F5722F400C8929B /* GoogleService-Info.plist */,
+				6E0EFA1A1F556AB1002EAF24 /* Info.plist */,
+				6E0EFA121F556AB1002EAF24 /* Bu_stia_de_Muro.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EBB77121F560176009C31C1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6EBB77141F5601CC009C31C1 /* Instrucciones.swift */,
+				6EBB771E1F560568009C31C1 /* Login & Registro */,
+				6EBB77251F5609DB009C31C1 /* Mensajes Recibidos */,
+				6EBB772C1F560E29009C31C1 /* Enviar Mensaje */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6EBB77131F560180009C31C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6EBB77281F560CA6009C31C1 /* TableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6EBB771E1F560568009C31C1 /* Login & Registro */ = {
+			isa = PBXGroup;
+			children = (
+				6EBB77161F560260009C31C1 /* Inicio.swift */,
+				6EBB77181F560361009C31C1 /* Login.swift */,
+				6EBB771A1F56036E009C31C1 /* Registro.swift */,
+				6EBB771C1F56038F009C31C1 /* Protected.swift */,
+			);
+			name = "Login & Registro";
+			sourceTree = "<group>";
+		};
+		6EBB77251F5609DB009C31C1 /* Mensajes Recibidos */ = {
+			isa = PBXGroup;
+			children = (
+				6EBB771F1F56058C009C31C1 /* ListadoMensajes.swift */,
+				6EBB77231F5609D1009C31C1 /* VistaDetallada.swift */,
+			);
+			name = "Mensajes Recibidos";
+			sourceTree = "<group>";
+		};
+		6EBB772C1F560E29009C31C1 /* Enviar Mensaje */ = {
+			isa = PBXGroup;
+			children = (
+				6EBB77261F560C77009C31C1 /* EnviarMensaje.swift */,
+				6EBB772A1F560E22009C31C1 /* Localizacion.swift */,
+			);
+			name = "Enviar Mensaje";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +267,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E0EFA331F556AB1002EAF24 /* Build configuration list for PBXNativeTarget "Bústia de Muro" */;
 			buildPhases = (
+				FF448C363669081D5D1800CE /* [CP] Check Pods Manifest.lock */,
 				6E0EFA041F556AB1002EAF24 /* Sources */,
 				6E0EFA051F556AB1002EAF24 /* Frameworks */,
 				6E0EFA061F556AB1002EAF24 /* Resources */,
+				85748A3339AEF13B6AD10333 /* [CP] Embed Pods Frameworks */,
+				64FE564F4CFA3DCF7D607400 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +287,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E0EFA361F556AB1002EAF24 /* Build configuration list for PBXNativeTarget "Bústia de MuroTests" */;
 			buildPhases = (
+				C4079DE0CC7D4C113784BE37 /* [CP] Check Pods Manifest.lock */,
 				6E0EFA1B1F556AB1002EAF24 /* Sources */,
 				6E0EFA1C1F556AB1002EAF24 /* Frameworks */,
 				6E0EFA1D1F556AB1002EAF24 /* Resources */,
+				80BE4F0F123D2AD3509BA428 /* [CP] Embed Pods Frameworks */,
+				999CDED27496D157841BEF3D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +308,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E0EFA391F556AB1002EAF24 /* Build configuration list for PBXNativeTarget "Bústia de MuroUITests" */;
 			buildPhases = (
+				C38431A799904C6BD5A67C54 /* [CP] Check Pods Manifest.lock */,
 				6E0EFA261F556AB1002EAF24 /* Sources */,
 				6E0EFA271F556AB1002EAF24 /* Frameworks */,
 				6E0EFA281F556AB1002EAF24 /* Resources */,
+				59341EDCF8D79E824B21D109 /* [CP] Embed Pods Frameworks */,
+				E7D0500A43E7E04687523DED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,23 +332,46 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Ajuntament de Muro";
 				TargetAttributes = {
 					6E0EFA071F556AB1002EAF24 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = FYDQ4CV7PV;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
 					};
 					6E0EFA1E1F556AB1002EAF24 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = FYDQ4CV7PV;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 6E0EFA071F556AB1002EAF24;
 					};
 					6E0EFA291F556AB1002EAF24 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = FYDQ4CV7PV;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 6E0EFA071F556AB1002EAF24;
 					};
@@ -240,6 +404,7 @@
 			files = (
 				6E0EFA191F556AB1002EAF24 /* LaunchScreen.storyboard in Resources */,
 				6E0EFA161F556AB1002EAF24 /* Assets.xcassets in Resources */,
+				6E89C91D1F5722F400C8929B /* GoogleService-Info.plist in Resources */,
 				6E0EFA111F556AB1002EAF24 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,14 +425,161 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		59341EDCF8D79E824B21D109 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bústia de MuroUITests/Pods-Bústia de MuroUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64FE564F4CFA3DCF7D607400 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bústia de Muro/Pods-Bústia de Muro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80BE4F0F123D2AD3509BA428 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bústia de MuroTests/Pods-Bústia de MuroTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85748A3339AEF13B6AD10333 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bústia de Muro/Pods-Bústia de Muro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		999CDED27496D157841BEF3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bústia de MuroTests/Pods-Bústia de MuroTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38431A799904C6BD5A67C54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4079DE0CC7D4C113784BE37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7D0500A43E7E04687523DED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bústia de MuroUITests/Pods-Bústia de MuroUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF448C363669081D5D1800CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6E0EFA041F556AB1002EAF24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E0EFA0E1F556AB1002EAF24 /* ViewController.swift in Sources */,
 				6E0EFA141F556AB1002EAF24 /* Bu_stia_de_Muro.xcdatamodeld in Sources */,
+				6EBB77191F560361009C31C1 /* Login.swift in Sources */,
+				6EBB771D1F56038F009C31C1 /* Protected.swift in Sources */,
+				6EBB771B1F56036E009C31C1 /* Registro.swift in Sources */,
 				6E0EFA0C1F556AB1002EAF24 /* AppDelegate.swift in Sources */,
+				6EBB77241F5609D1009C31C1 /* VistaDetallada.swift in Sources */,
+				6EBB77291F560CA6009C31C1 /* TableViewCell.swift in Sources */,
+				6EBB77171F560260009C31C1 /* Inicio.swift in Sources */,
+				6EBB77201F56058C009C31C1 /* ListadoMensajes.swift in Sources */,
+				6EBB772B1F560E22009C31C1 /* Localizacion.swift in Sources */,
+				6EBB77271F560C77009C31C1 /* EnviarMensaje.swift in Sources */,
+				6EBB77151F5601CC009C31C1 /* Instrucciones.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +619,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				6E0EFA101F556AB1002EAF24 /* Base */,
+				6E5BBDC41F63148A003517E9 /* es */,
+				6E5BBDC61F631495003517E9 /* ca */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -315,6 +629,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				6E0EFA181F556AB1002EAF24 /* Base */,
+				6E5BBDC51F63148A003517E9 /* es */,
+				6E5BBDC71F631495003517E9 /* ca */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -326,6 +642,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -362,7 +679,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -376,6 +693,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -406,8 +724,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -417,32 +736,43 @@
 		};
 		6E0EFA341F556AB1002EAF24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92120DD65F1134C94E216771 /* Pods-Bústia de Muro.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Bústia de Muro/Bústia de Muro.entitlements";
 				DEVELOPMENT_TEAM = FYDQ4CV7PV;
 				INFOPLIST_FILE = "Bústia de Muro/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Bu-stia-de-Muro";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aytomuro.Bu-stia-de-Muro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		6E0EFA351F556AB1002EAF24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 005E2D69394AAA4CED6B557B /* Pods-Bústia de Muro.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Bústia de Muro/Bústia de Muro.entitlements";
 				DEVELOPMENT_TEAM = FYDQ4CV7PV;
 				INFOPLIST_FILE = "Bústia de Muro/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Bu-stia-de-Muro";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aytomuro.Bu-stia-de-Muro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		6E0EFA371F556AB1002EAF24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D524FF6BC9D3A79EE8399A24 /* Pods-Bústia de MuroTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -458,6 +788,7 @@
 		};
 		6E0EFA381F556AB1002EAF24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E5E6E59B45C6FC3AB7A5089 /* Pods-Bústia de MuroTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -473,6 +804,7 @@
 		};
 		6E0EFA3A1F556AB1002EAF24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25437329AA65D009ABFFB30E /* Pods-Bústia de MuroUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = FYDQ4CV7PV;
@@ -487,6 +819,7 @@
 		};
 		6E0EFA3B1F556AB1002EAF24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DBB7CEFF70976D110749056 /* Pods-Bústia de MuroUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = FYDQ4CV7PV;
@@ -518,6 +851,7 @@
 				6E0EFA351F556AB1002EAF24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E0EFA361F556AB1002EAF24 /* Build configuration list for PBXNativeTarget "Bústia de MuroTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +860,7 @@
 				6E0EFA381F556AB1002EAF24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E0EFA391F556AB1002EAF24 /* Build configuration list for PBXNativeTarget "Bústia de MuroUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +869,7 @@
 				6E0EFA3B1F556AB1002EAF24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +22,108 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LA BÚSTIA DEL CIUTADÀ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCK-Q0-ftC">
+                                <rect key="frame" x="44" y="303" width="288" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="288" id="2NU-KI-CBk"/>
+                                    <constraint firstAttribute="height" constant="44" id="MRk-8e-fi1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CiTIC Apps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKT-EH-Yal">
+                                <rect key="frame" x="44" y="626" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="HRL-Ch-AzD"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="288" id="oi9-R5-BKT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.49911107700000001" green="0.84339604300000004" blue="0.18581596819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desenvolupat per:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kai-af-sc1">
+                                <rect key="frame" x="44" y="597" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7es-K5-3nW"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="288" id="OpI-BK-zuh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APP OFICIAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILi-qn-bef">
+                                <rect key="frame" x="44" y="341" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="A4i-VY-lME"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="288" id="ald-Hg-efo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AJUNTAMENT DE MURO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2r-Rt-BK7">
+                                <rect key="frame" x="44" y="363" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7yA-wf-ltN"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="288" id="gSx-Vu-aFd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.49911107700000001" green="0.84339604300000004" blue="0.18581596819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pariticacio-muro" translatesAutoresizingMaskIntoConstraints="NO" id="UkT-wm-NVJ">
+                                <rect key="frame" x="135" y="419" width="105" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="ZBe-v6-JsB"/>
+                                    <constraint firstAttribute="width" constant="105" id="frK-4S-JTP"/>
+                                    <constraint firstAttribute="width" secondItem="UkT-wm-NVJ" secondAttribute="height" multiplier="105:103" id="jRz-KF-Jnz"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bustia" translatesAutoresizingMaskIntoConstraints="NO" id="lAS-0D-SSL">
+                                <rect key="frame" x="124" y="167" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="03x-r6-d2h"/>
+                                    <constraint firstAttribute="width" secondItem="lAS-0D-SSL" secondAttribute="height" multiplier="1:1" id="FlV-bm-Uru"/>
+                                    <constraint firstAttribute="height" constant="128" id="oT6-yU-bbD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y2r-Rt-BK7" secondAttribute="trailing" constant="27" id="Frz-1V-9dG"/>
+                            <constraint firstItem="nKT-EH-Yal" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="28" id="Gh7-bF-GxC"/>
+                            <constraint firstItem="Kai-af-sc1" firstAttribute="top" relation="lessThanOrEqual" secondItem="UkT-wm-NVJ" secondAttribute="bottom" constant="75" id="HZI-Cc-fcd"/>
+                            <constraint firstItem="ILi-qn-bef" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="28" id="IvP-lG-u4A"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="nKT-EH-Yal" secondAttribute="bottom" constant="20" id="K0a-29-fkb"/>
+                            <constraint firstItem="nKT-EH-Yal" firstAttribute="top" secondItem="Kai-af-sc1" secondAttribute="bottom" constant="8" id="KvF-Mm-Xs5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kai-af-sc1" secondAttribute="trailing" constant="27" id="LV0-gn-yRT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jCK-Q0-ftC" secondAttribute="trailing" constant="27" id="PCn-Dq-2e4"/>
+                            <constraint firstItem="UkT-wm-NVJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PwK-wm-5g1"/>
+                            <constraint firstItem="Y2r-Rt-BK7" firstAttribute="top" secondItem="jCK-Q0-ftC" secondAttribute="bottom" constant="16" id="XSe-i9-lnc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nKT-EH-Yal" secondAttribute="trailing" constant="27" id="Z2D-UV-R7d"/>
+                            <constraint firstItem="lAS-0D-SSL" firstAttribute="top" relation="lessThanOrEqual" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="147" id="dsd-MI-47q"/>
+                            <constraint firstItem="jCK-Q0-ftC" firstAttribute="top" secondItem="lAS-0D-SSL" secondAttribute="bottom" constant="8" id="gAL-Z8-HUz"/>
+                            <constraint firstItem="Y2r-Rt-BK7" firstAttribute="top" secondItem="ILi-qn-bef" secondAttribute="bottom" constant="1" id="hQc-i3-SqP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ILi-qn-bef" secondAttribute="trailing" constant="27" id="ldh-kx-ZC0"/>
+                            <constraint firstItem="Y2r-Rt-BK7" firstAttribute="top" secondItem="ILi-qn-bef" secondAttribute="bottom" constant="1" id="plJ-t6-Keu"/>
+                            <constraint firstItem="jCK-Q0-ftC" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="28" id="qUS-ld-ncB"/>
+                            <constraint firstItem="lAS-0D-SSL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="sYe-zd-QEI"/>
+                            <constraint firstItem="nKT-EH-Yal" firstAttribute="top" secondItem="Kai-af-sc1" secondAttribute="bottom" constant="8" id="u07-gx-OgG"/>
+                            <constraint firstItem="Y2r-Rt-BK7" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="28" id="y2X-cE-7v8"/>
+                            <constraint firstItem="UkT-wm-NVJ" firstAttribute="top" secondItem="Y2r-Rt-BK7" secondAttribute="bottom" constant="35" id="zUt-Zg-mhd"/>
+                            <constraint firstItem="Kai-af-sc1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="28" id="zrB-S3-xmi"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_bustia" width="256" height="256"/>
+        <image name="pariticacio-muro" width="450" height="406"/>
+    </resources>
 </document>
