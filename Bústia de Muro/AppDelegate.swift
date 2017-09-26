@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     var window: UIWindow?
 
 
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         // Remote Push Notifications
@@ -32,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             // For iOS 10 display notification (sent via APNS)
             UNUserNotificationCenter.current().delegate = self
             
-            let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+            let authOptions: UNAuthorizationOptions = [.alert, .sound]
             UNUserNotificationCenter.current().requestAuthorization(
                 options: authOptions,
                 completionHandler: {_, _ in })
@@ -40,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         } else {
             
             let settings: UIUserNotificationSettings =
-                UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+                UIUserNotificationSettings(types: [.alert, .sound], categories: nil)
             application.registerUserNotificationSettings(settings)
         }
         
@@ -63,9 +64,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             UserDefaults.standard.set(true, forKey: "launchedBefore")
             
         }
-        
-        
+
+
         // Firebase configuration
+        /*
+        let token = Messaging.messaging().fcmToken
+        print("FCM token: \(token ?? "")")
+        */
         FIRApp.configure()
         
         
@@ -105,20 +110,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     // GET TOKEN METHODS
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        
+        if let FCMToken = FIRInstanceID.instanceID().token() {
+            print("FCM token: \(FCMToken)")
+            
+            let defaults = UserDefaults.standard
+            defaults.set("\(FCMToken)", forKey: "FCMToken")
+        }
+        
         var token = ""
         for i in 0..<deviceToken.count {
             token = token + String(format: "%02.2hhx", arguments: [deviceToken[i]])
         }
         print("Registration succeeded! Token: ", token)
+        
+        
+        var FirebaseToken : String? {
+            return FIRInstanceID.instanceID().token()
+        }
     }
     
+    func messaging(_ messaging: FIRMessaging, didRefreshRegistrationToken fcmToken: String) {
+        let FCMToken = FIRInstanceID.instanceID().token()
+        print("Firebase registration token: \(String(describing: FCMToken))")
+    }
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         print("Registration failed!")
     }
     
-    
-    
+
     
     
     

@@ -26,6 +26,7 @@ class Inicio: UIViewController, FBSDKLoginButtonDelegate {
     
     
 
+    @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var facebookBtn: FBSDKLoginButton!
     
     @IBAction func loginBtn(_ sender: Any) {
@@ -51,8 +52,16 @@ class Inicio: UIViewController, FBSDKLoginButtonDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let defaults = UserDefaults.standard
+        if let FCMToken = defaults.string(forKey: "FCMToken") {
+            print("THIS IS YOUR FUCKING NUMBER, REMEMBER TO STORE IT IN ADMIN PROFILE = \(FCMToken)")// Some String Value
+        }
+        
         facebookBtn.readPermissions = ["public_profile", "email", "user_friends"]
         facebookBtn.delegate = self
+        
+        loginBtn.layer.cornerRadius = 3
+        //facebookBtn.layer.cornerRadius = 50
         
         view.addSubview(facebookBtn)
     }

@@ -35,6 +35,11 @@ class ListadoMensajes: UIViewController, UITableViewDataSource,UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let defaults = UserDefaults.standard
+        if let FCMToken = defaults.string(forKey: "FCMToken") {
+            print("FCM TOKEN = \(FCMToken)")
+        }
+        
         refresh = UIRefreshControl()
         refresh.addTarget(self, action: #selector(didRefreshList), for: .valueChanged)
         self.refresh.backgroundColor = UIColor.white

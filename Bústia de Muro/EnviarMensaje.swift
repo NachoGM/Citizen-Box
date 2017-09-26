@@ -71,15 +71,6 @@ class EnviarMensaje: UIViewController, CLLocationManagerDelegate, UIImagePickerC
     
     
     
-    /*
-    //Calls this function when the tap is recognized.
-    override func dismissKeyboard() {
-        
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        view.endEditing(true)
-    }
-    */
-    
     func encodeImageToBase64(image : UIImage) -> String{
         
         let imageData = UIImageJPEGRepresentation(image, 1.0)
@@ -129,6 +120,12 @@ class EnviarMensaje: UIViewController, CLLocationManagerDelegate, UIImagePickerC
     
     @IBAction func sendBtn(_ sender: Any) {
         
+        // FCM TOKEN
+        let defaults = UserDefaults.standard
+        if let FCMToken = defaults.string(forKey: "FCMToken") {
+            print("FCM TOKEN = \(FCMToken)")
+        }
+        
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
         
@@ -136,7 +133,7 @@ class EnviarMensaje: UIViewController, CLLocationManagerDelegate, UIImagePickerC
         
         let Mensaje = mensaje.text ?? "";
         
-        let defaults = UserDefaults.standard
+        //let defaults = UserDefaults.standard
         
         let Identificador = defaults.string(forKey: "id") ?? "";
         
@@ -147,7 +144,6 @@ class EnviarMensaje: UIViewController, CLLocationManagerDelegate, UIImagePickerC
             image64 = encodeImageToBase64(image: myImageView.image!)
             
         } else {
-            
             image64 = ""
         }
         
