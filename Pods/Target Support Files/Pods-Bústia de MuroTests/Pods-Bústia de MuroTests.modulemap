@@ -1,0 +1,6 @@
+framework module Pods_Bu_stia_de_MuroTests {
+  umbrella header "Pods-Bústia de MuroTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -10,7 +10,7 @@ import UIKit
 import SwiftyOnboard
 
 class Instrucciones: UIViewController {
-
+ 
 
     @IBOutlet weak var paso1: UIView!
     @IBOutlet weak var paso2: UIView!

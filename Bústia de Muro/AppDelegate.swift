@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                 UIUserNotificationSettings(types: [.alert, .sound], categories: nil)
             application.registerUserNotificationSettings(settings)
         }
-        
+         
         application.registerForRemoteNotifications()
         
         

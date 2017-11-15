@@ -46,7 +46,7 @@ class Localizacion: UIViewController, CLLocationManagerDelegate {
         
         let region:MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
         mapView.setRegion(region, animated: true)
-        
+         
         let Localizacion = ("\(location.coordinate.latitude), \(location.coordinate.longitude)")
         UserDefaults.standard.set(Localizacion, forKey: "localizacion");
         UserDefaults.standard.synchronize();

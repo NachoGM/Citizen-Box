@@ -37,7 +37,7 @@ class Inicio: UIViewController, FBSDKLoginButtonDelegate {
     
     
     @IBAction func registerBtn(_ sender: Any) {
-        
+      
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "Registro") as! Registro
         self.present(vc, animated: true)
     }
