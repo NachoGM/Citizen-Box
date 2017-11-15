@@ -147,7 +147,7 @@ class EnviarMensaje: UIViewController, CLLocationManagerDelegate, UIImagePickerC
         if let FCMToken = defaults.string(forKey: "FCMToken") {
             print("FCM TOKEN = \(FCMToken)")
         }
-         
+        
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
         

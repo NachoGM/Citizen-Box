@@ -13,7 +13,7 @@ class InstruccionesUso: UIViewController {
     
     // Declare var SwiftyOnboard
     var swiftyOnboard: SwiftyOnboard!
-    
+     
     let colors:[UIColor] = [#colorLiteral(red: 0.9980840087, green: 0.3723873496, blue: 0.4952875376, alpha: 1),#colorLiteral(red: 0.2666860223, green: 0.5116362572, blue: 1, alpha: 1),#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1),#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)]
     var titleArray: [String] = ["Get registered in the Citizen's Box", "Wellcome to the Muro Citizens Box!", "Write us the issue, attach a photo and send it!", "Check the status of your message"]
     var subTitleArray: [String] = ["You can also sign in with your own account or with your Facebook account.", "Now you can send us what's happening.", "We will start to work on it!", "Orange light for status in review & Green light when the incidence will be solved."]

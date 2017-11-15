@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             application.registerUserNotificationSettings(settings)
         }
          
-        application.registerForRemoteNotifications()
+         application.registerForRemoteNotifications()
         
         
         // First Launch Recognition

@@ -11,7 +11,7 @@ import SwiftyOnboard
 
 class Instrucciones: UIViewController {
  
-
+ 
     @IBOutlet weak var paso1: UIView!
     @IBOutlet weak var paso2: UIView!
     @IBOutlet weak var paso3: UIView!

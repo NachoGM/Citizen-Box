@@ -101,7 +101,7 @@ class Registro: UIViewController {
                 // check for http errors
                 print("statusCode should be 200, but is \(httpStatus.statusCode)")
                 print("response = \(String(describing: response))")
-            } 
+            }  
         }
         task.resume()
         

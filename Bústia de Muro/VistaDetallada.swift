@@ -28,7 +28,7 @@ class VistaDetallada: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
+  
         // Load Info
         self.updateUI()
         

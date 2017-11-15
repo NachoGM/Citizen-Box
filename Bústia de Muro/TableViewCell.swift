@@ -5,7 +5,7 @@
 //  Created by Nacho MAC on 29/8/17.
 //  Copyright © 2017 Ajuntament de Muro. All rights reserved.
 //
- 
+  
 import UIKit
 
 class TableViewCell: UITableViewCell {

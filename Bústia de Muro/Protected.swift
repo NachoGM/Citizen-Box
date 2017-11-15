@@ -35,7 +35,7 @@ class Protected: UIViewController {
         
         nombreUser.text = userFB
     }
-     
+      
     // MARKS: Declare Actions
     @IBAction func logoutBtn(_ sender: Any) {
         let loginManager = FBSDKLoginManager()
