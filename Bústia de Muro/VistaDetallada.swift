@@ -7,19 +7,18 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class VistaDetallada: UIViewController {
-
+    
+    // MARKS: Declare Outlets
     @IBOutlet weak var myImageView: UIImageView!
     @IBOutlet weak var fechaLabel: UILabel!
     @IBOutlet weak var titularLabel: UILabel!
     @IBOutlet weak var mensajeLabel: UILabel!
     @IBOutlet weak var respuestaLabel: UILabel!
     
-    @IBAction func backBtn(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
+    // MARKS: Declare var
     var dobString:String!
     var nameString:String!
     var mensajeString:String!
@@ -29,24 +28,29 @@ class VistaDetallada: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        // Load Info
         self.updateUI()
         
+        // Load Admin Answer
         if (respuestaString.isEmpty == true) {
-            self.respuestaLabel.text = "Ninguna respuesta por parte del administrador."
             
+            self.respuestaLabel.text = "Ninguna respuesta por parte del administrador."
         } else {
+            
             self.respuestaLabel.text = respuestaString ?? ""
         }
         
     }
- 
+    
+    
+    // MARKS: Update info
     func updateUI() {
         
         self.titularLabel.text = nameString ?? ""
         self.fechaLabel.text = dobString ?? ""
         self.mensajeLabel.text = mensajeString ?? ""
-
+        
         let StringURL = "\("http://enalcoi.info/android/galeria_usuarios/")\(imageString!)"
         
         let imgURL = URL(string:StringURL)
@@ -54,6 +58,11 @@ class VistaDetallada: UIViewController {
         let data = NSData(contentsOf: (imgURL)!)
         self.myImageView.image = UIImage(data: data! as Data)
     }
-
+    
+    
+    // MARKS: Declare Actions
+    @IBAction func backBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 
 }

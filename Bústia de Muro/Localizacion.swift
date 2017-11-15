@@ -10,24 +10,32 @@ import UIKit
 import MapKit
 import CoreLocation
 
+protocol VCFinalDelegate {
+    func finishPassing(string: String)
+}
+
 class Localizacion: UIViewController, CLLocationManagerDelegate {
 
     
-    
+    // MARKS: Declare Outlets
     @IBOutlet weak var mapView: MKMapView!
     
-    @IBAction func backBtn(_ sender: Any) {
-        self.dismiss(animated: true)
-    }
-    
-    @IBAction func addBtn(_ sender: Any) {
-        self.dismiss(animated: true)
-    }
-    
-    
+    // MARKS: Declare var
     let location = CLLocationManager()
+    var delegate:VCFinalDelegate?
+
     
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        location.delegate = self
+        location.desiredAccuracy = kCLLocationAccuracyBest
+        location.requestWhenInUseAuthorization()
+        location.startUpdatingLocation()
+    }
+    
+    // MARKS: Declare Location Methods
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         let location = locations[0]
@@ -43,17 +51,20 @@ class Localizacion: UIViewController, CLLocationManagerDelegate {
         UserDefaults.standard.set(Localizacion, forKey: "localizacion");
         UserDefaults.standard.synchronize();
         
+        //
+        delegate?.finishPassing(string: "\(Localizacion)")
+
         mapView.showsUserLocation = true
     }
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        location.delegate = self
-        location.desiredAccuracy = kCLLocationAccuracyBest
-        location.requestWhenInUseAuthorization()
-        location.startUpdatingLocation()
-    }
 
+    // MARKS: Declare Actions
+    @IBAction func backBtn(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
+    
+    @IBAction func addBtn(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
+        
 }

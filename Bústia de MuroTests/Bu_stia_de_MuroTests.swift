@@ -7,8 +7,8 @@
 //
 
 import XCTest
-@testable import Bu_stia_de_Muro
 
+@testable import Bu_stia_de_Muro
 class Bu_stia_de_MuroTests: XCTestCase {
     
     override func setUp() {

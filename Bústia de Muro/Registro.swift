@@ -10,14 +10,24 @@ import UIKit
 
 class Registro: UIViewController {
     
+    // MARKS: Display Outlets
+    @IBOutlet weak var createBtn: UIButton!
+    @IBOutlet weak var userdni: UITextField!
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var userpassword: UITextField!
+    @IBOutlet weak var repeatPassword: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         createBtn.layer.cornerRadius = 20
         self.hideKeyboardWhenTappedAround()
-
+        
     }
     
+    
+    // MARKS: Display Dialog Message
     func displayMyAlertMessage(userMessage: String) {
         
         let myAlert = UIAlertController(title:"Atención", message: userMessage, preferredStyle: UIAlertControllerStyle.alert);
@@ -25,22 +35,9 @@ class Registro: UIViewController {
         myAlert.addAction(okAction);
         self.present(myAlert, animated: true, completion: nil);
     }
-
-    @IBOutlet weak var createBtn: UIButton!
     
-    @IBOutlet weak var userdni: UITextField!
-    
-    @IBOutlet weak var username: UITextField!
-    
-    @IBOutlet weak var userpassword: UITextField!
-    
-    @IBOutlet weak var repeatPassword: UITextField!
-    
-    @IBAction func backBtn(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func createBtn(_ sender: Any) {
+    // MARKS: Display Register JSON to DB Native
+    func registerJSON() {
         
         let userDni = userdni.text!;
         let userName = username.text!;
@@ -117,6 +114,17 @@ class Registro: UIViewController {
         
         myAlert.addAction(okAction);
         self.present(myAlert, animated: true, completion: nil);
+    }
+    
+    
+    // MARKS: Display Actions 
+    @IBAction func backBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func createBtn(_ sender: Any) {
+        
+        registerJSON()
     }
 
 

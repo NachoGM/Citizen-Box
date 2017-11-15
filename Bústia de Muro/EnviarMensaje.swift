@@ -10,35 +10,106 @@ import UIKit
 import CoreLocation
 import SVProgressHUD
 
-class EnviarMensaje: UIViewController, CLLocationManagerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class EnviarMensaje: UIViewController, CLLocationManagerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, VCFinalDelegate {
 
+    // MARKS: Declare Outlets
+    @IBOutlet weak var asunto: UITextField!
+    @IBOutlet weak var mensaje: UITextField!
+    @IBOutlet weak var myImageView: UIImageView!
     
+    // MARKS: Declare var
     var addfoto = false
     var addloc = false
     var FechaImagen = ""
     var Imagen = ""
     var image64 = ""
     var locationManager = CLLocationManager()
+    var Localizacion = ""
+    
+    // 1. Declare a new variable to hold data sent from SecondViewController
+    var valueSentFromSecondViewController:String?
+
+    func finishPassing(string: String) {
+        print("Notified")
+        Localizacion = string
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.hideKeyboardWhenTappedAround()
+    }
+    
 
+    // 2. Add viewWillAppear to display the value of the variable
+    override func viewDidAppear(_ animated: Bool) {
+        print("PASS DATA SUCCESSFUL IN VIEW DID APPEAR = \(Localizacion)")
+
+    }
+
+    //4. Implement MyProtocol's function to make FirstViewContoller conform to MyProtocol
+    // MARK: MyProtocol functions
+
+    
+
+    
+    
+    // MARKS: Declare Dialog Message
+    func displayMyAlertMessage(userMessage: String) {
+        
+        let myAlert = UIAlertController(title:"Atención", message: userMessage, preferredStyle: UIAlertControllerStyle.alert);
+        let okAction = UIAlertAction(title: "Vale", style: UIAlertActionStyle.default, handler: nil);
+        myAlert.addAction(okAction);
+        self.present(myAlert, animated: true, completion: nil);
+    }
+    
+    // MARKS: Declare Picker Methods
+    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]){
+        
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        myImageView.image = image
+        
+        let dateformatter = DateFormatter()
+        dateformatter.locale = Locale(identifier: "es")
+        dateformatter.setLocalizedDateFormatFromTemplate("hh:mm:ss")
+        dateformatter.timeStyle = DateFormatter.Style.medium
+        
+        let Imagen1 = dateformatter.string(from: Date())
+        
+        addfoto = true
+        FechaImagen = "\(Imagen1)\(".jpg")"
+        
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+        
+        myImageView.image! = image
+        
+        self.dismiss(animated: true, completion: nil);
+    }
+    
+    func encodeImageToBase64(image : UIImage) -> String{
+        
+        let imageData = UIImageJPEGRepresentation(image, 1.0)
+        let strBase64 = imageData?.base64EncodedString(options: NSData.Base64EncodingOptions(rawValue: 0))
+        
+        return strBase64!
     }
     
     
-    @IBOutlet weak var asunto: UITextField!
-    @IBOutlet weak var mensaje: UITextField!
-    @IBOutlet weak var myImageView: UIImageView!
-    
+    // MARKS: Declare Actions
     @IBAction func backBtn(_ sender: Any) {
+        
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func addLocationBtn(_ sender: Any) {
-        
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Localizacion")
-        self.present(vc!, animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+
+        let vc = storyboard.instantiateViewController(withIdentifier: "Localizacion") as! Localizacion
+        vc.delegate = self
+        self.present(vc, animated: true)
     }
     
     @IBAction func cameraBtn(_ sender: EnviarMensaje) {
@@ -69,55 +140,6 @@ class EnviarMensaje: UIViewController, CLLocationManagerDelegate, UIImagePickerC
         }
     }
     
-    
-    
-    func encodeImageToBase64(image : UIImage) -> String{
-        
-        let imageData = UIImageJPEGRepresentation(image, 1.0)
-        
-        let strBase64 = imageData?.base64EncodedString(options: NSData.Base64EncodingOptions(rawValue: 0))
-        
-        return strBase64!
-    }
-    
-    
-    // Función Alerta
-    func displayMyAlertMessage(userMessage: String) {
-        
-        let myAlert = UIAlertController(title:"Atención", message: userMessage, preferredStyle: UIAlertControllerStyle.alert);
-        let okAction = UIAlertAction(title: "Vale", style: UIAlertActionStyle.default, handler: nil);
-        myAlert.addAction(okAction);
-        self.present(myAlert, animated: true, completion: nil);
-    }
-    
-    
-    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]){
-        
-        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-        myImageView.image = image
-        
-        let dateformatter = DateFormatter()
-        dateformatter.locale = Locale(identifier: "es")
-        dateformatter.setLocalizedDateFormatFromTemplate("hh:mm:ss")
-        dateformatter.timeStyle = DateFormatter.Style.medium
-        
-        let Imagen1 = dateformatter.string(from: Date())
-        
-        addfoto = true
-        
-        FechaImagen = "\(Imagen1)\(".jpg")"
-        
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
-        
-        myImageView.image! = image
-        
-        self.dismiss(animated: true, completion: nil);
-    }
-    
     @IBAction func sendBtn(_ sender: Any) {
         
         // FCM TOKEN
@@ -130,20 +152,15 @@ class EnviarMensaje: UIViewController, CLLocationManagerDelegate, UIImagePickerC
         locationManager.startUpdatingLocation()
         
         let Asunto = asunto.text ?? "";
-        
         let Mensaje = mensaje.text ?? "";
-        
-        //let defaults = UserDefaults.standard
-        
         let Identificador = defaults.string(forKey: "id") ?? "";
-        
-        let Localizacion = defaults.string(forKey: "localizacion") ?? "";
-        
+        let Localizacion = self.Localizacion
+       
         if addfoto == true {
             
             image64 = encodeImageToBase64(image: myImageView.image!)
-            
         } else {
+            
             image64 = ""
         }
         
@@ -207,7 +224,9 @@ class EnviarMensaje: UIViewController, CLLocationManagerDelegate, UIImagePickerC
                     OperationQueue.main.addOperation{
                         
                         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ListadoMensajes") as! ListadoMensajes
+                        //ListadoMensajes.delegate = self
                         self.present(vc, animated: true)
+
                     }
                 }
                 

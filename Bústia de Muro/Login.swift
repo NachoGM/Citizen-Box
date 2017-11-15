@@ -7,9 +7,27 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
+import SVProgressHUD
 
 class Login: UIViewController {
     
+
+    @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var userdni: UITextField!
+    @IBOutlet weak var userpassword: UITextField!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        loginBtn.layer.cornerRadius = 20
+        self.hideKeyboardWhenTappedAround()
+    }
+    
+    
+    // MARKS: Display Dialog Message
     func displayMyAlertMessage(userMessage: String) {
         
         let myAlert = UIAlertController(title:"Atención", message: userMessage, preferredStyle: UIAlertControllerStyle.alert);
@@ -18,26 +36,9 @@ class Login: UIViewController {
         self.present(myAlert, animated: true, completion: nil);
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        loginBtn.layer.cornerRadius = 20
-        self.hideKeyboardWhenTappedAround()
-
-    }
-
-    @IBOutlet weak var loginBtn: UIButton!
     
-    @IBOutlet weak var userdni: UITextField!
-    
-    @IBOutlet weak var userpassword: UITextField!
-    
-    @IBAction func backBtn(_ sender: Any) {
-        
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func loginBtn(_ sender: Any) {
+    // MARKS: Display Login JSON to DB
+    func loginBM() {
         
         // escribir valores para dni y contraseña
         let userDni = userdni.text ?? "";
@@ -50,74 +51,66 @@ class Login: UIViewController {
             return;
         }
         
-        // Guardar los datos en bbdd
-        var request = URLRequest(url: URL(string: "http://enalcoi.info/android/webservicemuro/login.php")!)
-        request.httpMethod = "POST"
+        // Enviamos info
+        SVProgressHUD.show(withStatus: "Loading Messages...")
         
-        let postString = "dni=\(userDni)&password=\(userPassword)";
-        request.httpBody = postString.data(using: .utf8)
-        
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data, error == nil else {
+        Alamofire.request("http://enalcoi.info/android/webservicemuro/login.php?dni=\(userDni)&password=\(userPassword)", method: .post).responseData { response in
+
+            debugPrint("Response Login Info: \(String(describing: response))")
+            
+            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
                 
-                // check for fundamental networking error
-                print("error=\(String(describing: error))")
-                return
-            }
-            
-            // Obtenemos respuesta de la bd
-            let responseString = String(data: data, encoding: .utf8)
-            
-            // Mostramos por terminal
-            print("responseString = \(responseString ?? "")")
-            
-            //Si la respuesta contiene 1, el usuario exite en la bd
-            if ((responseString?.range(of: "1")) != nil){
+                // original server data as UTF8 string
+                print("Data: \(utf8Text)")
                 
-                OperationQueue.main.addOperation{
+                if ((utf8Text.range(of: "1")) != nil){
+                    OperationQueue.main.addOperation{
+                        self.displayMyAlertMessage(userMessage: "El usuario o la contraseña no coinciden");                        //return;
+                    }
                     
-                    self.displayMyAlertMessage(userMessage: "Te has logueado correctamente")
-                    return;
+                    
+                } else {
+                    
+                    print("Error")
                 }
-            }
-            
-            //Si la respuesta contiene un 0, el suario no existe
-            if ((responseString?.range(of: "0")) != nil){
                 
-                OperationQueue.main.addOperation{
-                    self.displayMyAlertMessage(userMessage: "El usuario o la contraseña no coinciden")
+                //Si la respuesta contiene un 0, el suario no existe
+                if ((utf8Text.range(of: "0")) != nil){
+                    
+                        self.displayMyAlertMessage(userMessage: "El usuario o la contraseña no coinciden");                        return;
                 }
+             
             }
+
+            // Guardar variable id
+            let defaults = UserDefaults.standard
+            defaults.set(userDni, forKey: "id")
             
-            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {
-                
-                // check for http errors
-                print("statusCode should be 200, but is \(httpStatus.statusCode)")
-                print("response = \(String(describing: response))")
-            }
+
+            // Si todo está ok, pasamos a ListadoMensajes
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ListadoMensajes") as! ListadoMensajes
+            self.present(vc, animated: true)
+            SVProgressHUD.dismiss()
+            
         }
-        task.resume()
-        
-        // Guardar variable
-        let defaults = UserDefaults.standard
-        defaults.set(userDni, forKey: "id")
-        
-        // Si todo está ok, pasamos a ListadoMensajes
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ListadoMensajes") as! ListadoMensajes
-        self.present(vc, animated: true)
     }
-    /*
-    //Calls this function when the tap is recognized.
-    override func dismissKeyboard() {
+    
+    
+    // MARKS: Display Actions
+    @IBAction func backBtn(_ sender: Any) {
         
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        view.endEditing(true)
+        self.dismiss(animated: true, completion: nil)
     }
-    */
+
+    @IBAction func loginBtn(_ sender: Any) {
+        
+        loginBM()
+    }
+    
     
 }
 
-
+// MARKS: Extension 4 dismiss keyboard
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))

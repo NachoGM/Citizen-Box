@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyOnboard
 
 class Instrucciones: UIViewController {
 

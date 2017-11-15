@@ -10,7 +10,7 @@ import UIKit
 import FBSDKLoginKit
 import FacebookCore
 import FacebookLogin
-
+import SafariServices
 
 class Inicio: UIViewController, FBSDKLoginButtonDelegate {
     
@@ -54,14 +54,13 @@ class Inicio: UIViewController, FBSDKLoginButtonDelegate {
         
         let defaults = UserDefaults.standard
         if let FCMToken = defaults.string(forKey: "FCMToken") {
-            print("THIS IS YOUR FUCKING NUMBER, REMEMBER TO STORE IT IN ADMIN PROFILE = \(FCMToken)")// Some String Value
+            // Print FCM Token
+            print("FCMToken = \(FCMToken)")
         }
         
         facebookBtn.readPermissions = ["public_profile", "email", "user_friends"]
         facebookBtn.delegate = self
-        
         loginBtn.layer.cornerRadius = 3
-        //facebookBtn.layer.cornerRadius = 50
         
         view.addSubview(facebookBtn)
     }

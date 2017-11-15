@@ -15,6 +15,7 @@
 		6E0EFA241F556AB1002EAF24 /* Bu_stia_de_MuroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EFA231F556AB1002EAF24 /* Bu_stia_de_MuroTests.swift */; };
 		6E0EFA2F1F556AB1002EAF24 /* Bu_stia_de_MuroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EFA2E1F556AB1002EAF24 /* Bu_stia_de_MuroUITests.swift */; };
 		6E89C91D1F5722F400C8929B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E89C91C1F5722F400C8929B /* GoogleService-Info.plist */; };
+		6E92B3E11FBC3F4700D68C32 /* InstruccionesUso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E92B3E01FBC3F4700D68C32 /* InstruccionesUso.swift */; };
 		6EBB770E1F55F02F009C31C1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBB770D1F55F02F009C31C1 /* MapKit.framework */; };
 		6EBB77101F55F059009C31C1 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBB770F1F55F059009C31C1 /* ExternalAccessory.framework */; };
 		6EBB77151F5601CC009C31C1 /* Instrucciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB77141F5601CC009C31C1 /* Instrucciones.swift */; };
@@ -73,6 +74,7 @@
 		6E5BBDC61F631495003517E9 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Main.strings; sourceTree = "<group>"; };
 		6E5BBDC71F631495003517E9 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		6E89C91C1F5722F400C8929B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6E92B3E01FBC3F4700D68C32 /* InstruccionesUso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstruccionesUso.swift; sourceTree = "<group>"; };
 		6EBB770B1F55F021009C31C1 /* Bústia de Muro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bústia de Muro.entitlements"; sourceTree = "<group>"; };
 		6EBB770D1F55F02F009C31C1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6EBB770F1F55F059009C31C1 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
@@ -160,9 +162,9 @@
 		6E0EFA0A1F556AB1002EAF24 /* Bústia de Muro */ = {
 			isa = PBXGroup;
 			children = (
+				6EBB77111F55F242009C31C1 /* Model */,
 				6EBB77131F560180009C31C1 /* Views */,
 				6EBB77121F560176009C31C1 /* Controllers */,
-				6EBB77111F55F242009C31C1 /* Supporting Files */,
 			);
 			path = "Bústia de Muro";
 			sourceTree = "<group>";
@@ -185,6 +187,14 @@
 			path = "Bústia de MuroUITests";
 			sourceTree = "<group>";
 		};
+		6E92B3E41FBC9B6900D68C32 /* FirstLaunch */ = {
+			isa = PBXGroup;
+			children = (
+				6E92B3E01FBC3F4700D68C32 /* InstruccionesUso.swift */,
+			);
+			path = FirstLaunch;
+			sourceTree = "<group>";
+		};
 		6EBB770C1F55F02F009C31C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,7 +207,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6EBB77111F55F242009C31C1 /* Supporting Files */ = {
+		6EBB77111F55F242009C31C1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				6EBB770B1F55F021009C31C1 /* Bústia de Muro.entitlements */,
@@ -209,13 +219,14 @@
 				6E0EFA1A1F556AB1002EAF24 /* Info.plist */,
 				6E0EFA121F556AB1002EAF24 /* Bu_stia_de_Muro.xcdatamodeld */,
 			);
-			name = "Supporting Files";
+			name = Model;
 			sourceTree = "<group>";
 		};
 		6EBB77121F560176009C31C1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				6EBB77141F5601CC009C31C1 /* Instrucciones.swift */,
+				6E92B3E41FBC9B6900D68C32 /* FirstLaunch */,
 				6EBB771E1F560568009C31C1 /* Login & Registro */,
 				6EBB77251F5609DB009C31C1 /* Mensajes Recibidos */,
 				6EBB772C1F560E29009C31C1 /* Enviar Mensaje */,
@@ -332,7 +343,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Ajuntament de Muro";
 				TargetAttributes = {
 					6E0EFA071F556AB1002EAF24 = {
@@ -580,6 +591,7 @@
 				6EBB772B1F560E22009C31C1 /* Localizacion.swift in Sources */,
 				6EBB77271F560C77009C31C1 /* EnviarMensaje.swift in Sources */,
 				6EBB77151F5601CC009C31C1 /* Instrucciones.swift in Sources */,
+				6E92B3E11FBC3F4700D68C32 /* InstruccionesUso.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
